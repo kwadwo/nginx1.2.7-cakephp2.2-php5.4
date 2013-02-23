@@ -1,0 +1,18 @@
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:nginx/stable
+sudo apt-get update & sudo apt-get install nginx
+sudo service nginx restart
+sudo add-apt-repository ppa:ondrej/php5
+sudo apt-get update
+sudo apt-get install php5-fpm php5-cli php5-cgi
+sudo vim /etc/nginx/sites-enabled/default
+sudo service php5-fpm restart
+sudo service nginx restart
+vim /usr/share/nginx/html/info.php
+<?php
+phpinfo();
+?>
+sudo service php5-fpm restart
+apt-get install mysql-server mysql-client
+sudo apt-get install mysql-server  php5-mysql
+apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl  
